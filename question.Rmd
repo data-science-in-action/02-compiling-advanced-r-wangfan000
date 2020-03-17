@@ -1,0 +1,22 @@
+---
+title: "question anli"
+author: "wangfan"
+date: "2020/3/17"
+output: pdf_document
+latex_engine: xelatex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## R Markdown
+
+question1:creating R Markdown documents requires updated versions of the following packages:htmltools,caTools,bitops,rmarkdown?
+answer1: install these packages
+
+
+question2:Knit PDF : pandoc document conversion failed with error 43
+
+
