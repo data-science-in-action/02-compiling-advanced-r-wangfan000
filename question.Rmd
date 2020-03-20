@@ -17,6 +17,18 @@ question1:creating R Markdown documents requires updated versions of the followi
 answer1: install these packages
 
 
-question2:Knit PDF : pandoc document conversion failed with error 43
+question2:use `bookdown` package
+```{r eval=FALSE}
+bookdown::render_book("index.Rmd", output_format = "bookdown::pdf_book")
+```
 
-
+question3:Unable to load devtools package
+Execute the following command in Git.
+```{r eval=FALSE}
+$ git config --global http.sslBackend "openssl"
+$ git config --global http.sslCAInfo [path to .pem file] 
+```
+question4:Quitting from lines 223-235 (Introduciton.Rmd)
+knitr::include_graphics("image/Quitting_from_IntroducitonRmd.PNG")
+Adding `encoding = "UTF-8"` in line 224 can fix it. The line 224 is displayed as
+contributors <- read.csv("contributors.csv", stringsAsFactors = FALSE,encoding = "UTF-8")
